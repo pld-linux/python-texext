@@ -22,6 +22,7 @@ BuildRequires:	python-setuptools
 BuildRequires:	python-Sphinx >= 1.3.1
 BuildRequires:	python-pytest
 BuildRequires:	python-six
+BuildRequires:	python-sphinxtesters
 BuildRequires:	python-sympy
 %endif
 %endif
@@ -32,6 +33,7 @@ BuildRequires:	python3-setuptools
 BuildRequires:	python3-Sphinx >= 1.3.1
 BuildRequires:	python3-pytest
 BuildRequires:	python3-six
+BuildRequires:	python3-sphinxtesters
 BuildRequires:	python3-sympy
 %endif
 %endif
