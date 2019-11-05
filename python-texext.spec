@@ -8,7 +8,7 @@ Summary:	Sphinx extensions for working with LaTeX math
 Summary(pl.UTF-8):	Rozszerzenia Sphinksa do pracy z LaTeXowymi wzorami matematycznymi
 Name:		python-texext
 Version:	0.6.1
-Release:	2
+Release:	3
 License:	BSD
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/texext/
