@@ -7,34 +7,38 @@
 Summary:	Sphinx extensions for working with LaTeX math
 Summary(pl.UTF-8):	Rozszerzenia Sphinksa do pracy z LaTeXowymi wzorami matematycznymi
 Name:		python-texext
-Version:	0.6.1
-Release:	3
+Version:	0.6.5
+Release:	1
 License:	BSD
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/texext/
 Source0:	https://files.pythonhosted.org/packages/source/t/texext/texext-%{version}.tar.gz
-# Source0-md5:	a8bf2d509afdbc1307a0e7bfc4bd3eaf
+# Source0-md5:	4f86a0cd2e75f1779b713b8342c7cdc6
 URL:		https://pypi.org/project/texext/
 %if %{with python2}
 BuildRequires:	python-modules >= 1:2.7
 BuildRequires:	python-setuptools
 %if %{with tests}
 BuildRequires:	python-Sphinx >= 1.3.1
+BuildRequires:	python-docutils >= 0.12
+BuildRequires:	python-matplotlib >= 1.4.3
 BuildRequires:	python-pytest
-BuildRequires:	python-six
-BuildRequires:	python-sphinxtesters
-BuildRequires:	python-sympy
+BuildRequires:	python-six >= 1.4.0
+BuildRequires:	python-sphinxtesters >= 0.2
+BuildRequires:	python-sympy >= 0.7
 %endif
 %endif
 %if %{with python3}
-BuildRequires:	python3-modules >= 1:3.3
+BuildRequires:	python3-modules >= 1:3.4
 BuildRequires:	python3-setuptools
 %if %{with tests}
 BuildRequires:	python3-Sphinx >= 1.3.1
+BuildRequires:	python3-docutils >= 0.12
+BuildRequires:	python3-matplotlib >= 1.4.3
 BuildRequires:	python3-pytest
-BuildRequires:	python3-six
-BuildRequires:	python3-sphinxtesters
-BuildRequires:	python3-sympy
+BuildRequires:	python3-six >= 1.4.0
+BuildRequires:	python3-sphinxtesters >= 0.2
+BuildRequires:	python3-sympy >= 0.7
 %endif
 %endif
 BuildRequires:	rpm-pythonprov
@@ -55,7 +59,7 @@ matematycznymi.
 Summary:	Sphinx extensions for working with LaTeX math
 Summary(pl.UTF-8):	Rozszerzenia Sphinksa do pracy z LaTeXowymi wzorami matematycznymi
 Group:		Libraries/Python
-Requires:	python3-modules >= 1:3.3
+Requires:	python3-modules >= 1:3.4
 
 %description -n python3-texext
 texext contains a couple of Sphinx extensions for working with LaTeX
